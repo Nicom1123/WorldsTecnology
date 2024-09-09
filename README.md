@@ -1,4 +1,4 @@
-![Banner](https://github.com/user-attachments/assets/d0b392f1-d144-413c-ade1-21743233f37f)
+![Bannerrrr](https://github.com/user-attachments/assets/ba3ad8cb-4e75-4a8d-baf5-30bedcf658df)
 
 # Informacion del proyecto  
 
