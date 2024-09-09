@@ -8,8 +8,8 @@ Este proyecto es un CRUD Admin dashboard encargado de la administracion de los i
 
 Tecnologias usadas
 
-- [HTML](https://nextjs.org)
-- [CSS](https://reactjs.org)
-- [PHP](https://vuejs.org)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [PHP](https://www.php.net/)
 - [Xampp](https://www.apachefriends.org/index.html)
 - [Figma](www.figma.com)
