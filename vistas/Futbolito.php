@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../controlador/AerohockeyController.php';
+require_once __DIR__ . '/../controlador/FutbolitoController.php';
 session_start();
 
 // Verificar sesión
@@ -8,8 +8,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     exit();
 }
 
-$aerohockeyController = new AerohockeyController($mysqli);
-$aerohockeyData = $aerohockeyController->displayAll();
+$futbolitoController = new FutbolitoController($mysqli);
+$futbolitoData = $futbolitoController->displayAll();
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +18,14 @@ $aerohockeyData = $aerohockeyController->displayAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Aerohockey</title>
+    <title>Futbolito</title>
 </head>
 <body>
 <?php include 'components/side-bar.php'; ?>
 <div class="container">
-    <h1>Aerohockey</h1>
+    <h1>Futbolito</h1>
     <div class="container-table">
-        <?php include 'components/aerohockey-table.php'; ?>
+        <?php include 'components/futbolito-table.php'; ?>
     </div>
 </div>
 </body>
