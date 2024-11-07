@@ -15,34 +15,26 @@ $pingPongData = $pingPongController->displayAll();
 </head>
 
 <body>
-    <?php include 'components/side-bar.php'; ?>
-    <div class="container">
-        <div class="container-info">
-            <h1>Ping Pong</h1>
-        </div>
-        <div class="container-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Estudiante</th>
-                        <th>Tiempo Restante</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($pingPongData as $row) : ?>
-                        <tr>
-                            <td><?= $row['id']; ?></td>
-                            <td><?= $row['estudiante']; ?></td>
-                            <td><?= $row['tiempo_restante']; ?></td>
-                            <td><?php include 'components/buttons.php'; ?></td>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
-        </div>
+<?php
+  include 'components/side-bar.php';
+  ?>
+  <div class="container">
+    <div class="container-info">
+      <div class="container-info-page-title">
+        <h1>Pingpong</h1>
+      </div>
+      <div class="container-info-time">
+        <script src="js/hour.js" defer></script>
+        <h1 id="page-hour">
+        </h1>
+      </div>
     </div>
+    <div class="container-table">
+      <?php
+      include 'components/pingpong-table.php';
+      ?>
+    </div>
+  </div>
 </body>
 
 </html>

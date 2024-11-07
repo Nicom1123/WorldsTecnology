@@ -9,7 +9,7 @@ class Admin {
     }
 
     public function authenticate($username, $password) {
-        $sql = "SELECT * FROM administradores WHERE username = ? AND password = ?";
+        $sql = "SELECT * FROM admin WHERE username = ? AND password = ?";
         $stmt = $this->mysqli->prepare($sql);
         $stmt->bind_param("ss", $username, $password);
         $stmt->execute();

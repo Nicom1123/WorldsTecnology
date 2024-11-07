@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__ . '/../modelos/Aerohockey.php';
+require_once __DIR__ . '/../modelos/Futbolito.php';
 
-class AerohockeyController {
+class FutbolitoController {
     private $model;
 
     public function __construct($mysqli) {
-        $this->model = new Aerohockey($mysqli);
+        $this->model = new Futbolito($mysqli);
     }
 
     public function displayAll() {
