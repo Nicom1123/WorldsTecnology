@@ -13,7 +13,7 @@
         <tbody>
           <tr>
            <?php
-           include 'components/console-query.php';
+           include 'console-query.php';
            ?>
           <tr>
             </td>

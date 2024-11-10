@@ -9,6 +9,7 @@ class LoginController {
     }
 
     public function login() {
+        
         session_start();
         
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -18,7 +19,7 @@ class LoginController {
             if ($this->adminModel->authenticate($username, $password)) {
                 // Autenticación exitosa
                 $_SESSION['loggedin'] = true;
-                header('Location: console.php');
+                header('Location: vistas/Console.php');
                 exit();
             } else {
                 // Autenticación fallida

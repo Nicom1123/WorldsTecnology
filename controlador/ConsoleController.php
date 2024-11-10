@@ -9,7 +9,6 @@ class ConsoleController {
     }
 
     public function index() {
-        $consolas = $this->consoleModel->getAll();
-        include __DIR__ . '/../views/console.php';
+        return $this->consoleModel->getAll();
     }
 }

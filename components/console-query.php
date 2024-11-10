@@ -8,7 +8,7 @@ if ($result = $mysqli->query($sql)) {
         echo "<td>" . $row['juego'] . "</td>";
         echo "<td>" . $row['tiempo restante'] . "</td>";
         echo "<td>";
-        include 'components/buttons.php';
+        include 'buttons.php';
         echo "</td>";
         echo "</tr>";
     }
