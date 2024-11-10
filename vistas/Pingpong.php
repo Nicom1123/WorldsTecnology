@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/controlador/PingPongController.php';
+require_once __DIR__ . '/../controlador/PingPongController.php';
 $pingPongController = new PingPongController($mysqli);
 $pingPongData = $pingPongController->displayAll();
 ?>
@@ -16,7 +16,7 @@ $pingPongData = $pingPongController->displayAll();
 
 <body>
 <?php
-  include 'components/side-bar.php';
+include __DIR__ . '/../components/side-bar.php';
   ?>
   <div class="container">
     <div class="container-info">
@@ -31,8 +31,8 @@ $pingPongData = $pingPongController->displayAll();
     </div>
     <div class="container-table">
       <?php
-      include 'components/pingpong-table.php';
-      ?>
+include __DIR__ . '/../components/pingpong-table.php';
+?>
     </div>
   </div>
 </body>

@@ -17,15 +17,17 @@ $aerohockeyData = $aerohockeyController->displayAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style/main.css">
     <title>Aerohockey</title>
 </head>
 <body>
-<?php include 'components/side-bar.php'; ?>
+<?php include __DIR__ . '/../components/side-bar.php';
+?>
 <div class="container">
     <h1>Aerohockey</h1>
     <div class="container-table">
-        <?php include 'components/aerohockey-table.php'; ?>
+        <?php include __DIR__ . '/../components/aerohockey-table.php';
+; ?>
     </div>
 </div>
 </body>

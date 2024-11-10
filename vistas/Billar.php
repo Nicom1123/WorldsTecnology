@@ -21,11 +21,12 @@ $billarData = $billarController->displayAll();
     <title>Billar</title>
 </head>
 <body>
-<?php include 'components/side-bar.php'; ?>
+<?php include __DIR__ . '/../components/side-bar.php';
+ ?>
 <div class="container">
     <h1>Billar</h1>
     <div class="container-table">
-        <?php include 'components/billar-table.php'; ?>
+        <?php include '../components/billar-table.php'; ?>
     </div>
 </div>
 </body>

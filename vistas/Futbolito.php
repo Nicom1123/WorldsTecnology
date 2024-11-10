@@ -21,11 +21,12 @@ $futbolitoData = $futbolitoController->displayAll();
     <title>Futbolito</title>
 </head>
 <body>
-<?php include 'components/side-bar.php'; ?>
+<?php include __DIR__ . '/../components/side-bar.php';?>
 <div class="container">
     <h1>Futbolito</h1>
     <div class="container-table">
-        <?php include 'components/futbolito-table.php'; ?>
+        <?php include __DIR__ . '/../components/futbolito-table.php';
+; ?>
     </div>
 </div>
 </body>
